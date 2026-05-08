@@ -94,8 +94,5 @@ export default async function decorate(block) {
 
   await loadScript('https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js');
   await loadScript('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js');
-
-  const appScript = document.createElement('script');
-  appScript.src = `${window.hlx.codeBasePath}/blocks/architecture-cockpit/app.js`;
-  document.body.appendChild(appScript);
+  await loadScript(`${window.hlx.codeBasePath}/blocks/architecture-cockpit/app.js`);
 }

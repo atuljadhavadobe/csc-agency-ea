@@ -855,14 +855,21 @@ class GraphRenderer {
   focus(id) {
     const n = this.layout().descendants().find((x) => x.data.id === id);
     if (!n) return;
-    const w = this.svg.node().clientWidth; const
-      h = this.svg.node().clientHeight;
+    const w = this.svg.node().clientWidth;
+    const h = this.svg.node().clientHeight;
+    if (!w || !h) return;
     const [x, y] = this.coords(n);
     const t = d3.zoomIdentity.translate(w / 2 - x, h / 2 - y).scale(0.95);
     this.svg.transition().duration(500).call(this.zoom.transform, t);
   }
 
   fitToView() {
+    const w = this.svg.node().clientWidth;
+    const h = this.svg.node().clientHeight;
+    if (!w || !h) {
+      requestAnimationFrame(() => this.fitToView());
+      return;
+    }
     const ns = this.layout().descendants();
     if (!ns.length) return;
     let topEdge = Infinity; let bottomEdge = -Infinity; let leftEdge = Infinity; let
@@ -882,8 +889,6 @@ class GraphRenderer {
     });
     const PAD_TOP = 24; const
       PAD_X = 28;
-    const w = this.svg.node().clientWidth; const
-      h = this.svg.node().clientHeight;
     const layoutW = (rightEdge - leftEdge) + PAD_X * 2;
     const layoutH = (bottomEdge - topEdge) + PAD_TOP * 2;
     const s = Math.min(w / layoutW, h / layoutH, 1);

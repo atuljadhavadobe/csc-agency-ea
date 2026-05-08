@@ -102,6 +102,7 @@ html, body {
   font-family: var(--sans);
   font-size: var(--t-base); line-height: 1.5;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "cv11", "ss01", "ss03", "calt";
@@ -115,6 +116,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   grid-template-rows: var(--topbar-h) 1fr;
   height: 100vh;
+  height: 100dvh;
 }
 
 /* ============================================================================
@@ -574,6 +576,8 @@ a { color: inherit; text-decoration: none; }
 #canvas-wrap {
   position: relative;
   overflow: hidden;
+  min-height: 0;
+  min-width: 0;
   background-color: var(--bg-canvas);
   background-image: radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.07) 1px, transparent 0);
   background-size: 24px 24px;
