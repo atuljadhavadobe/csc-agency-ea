@@ -1,12 +1,13 @@
 /* EDS wrapper overrides — full viewport, no centering */
-.architecture-cockpit-wrapper {
+main > .section > .architecture-cockpit-wrapper {
   max-width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.architecture-cockpit-container {
+main > .architecture-cockpit-container {
   max-width: 100%;
+  margin: 0;
   padding: 0;
 }
 
