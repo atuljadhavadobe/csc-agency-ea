@@ -261,20 +261,29 @@ const detailPanel = (() => {
   function renderArchitectureSectionsPanel(node) {
     const secs = node.meta.architectureSections || [];
     if (!secs.length) return '';
-    const blocks = secs.map((sec, idx) => {
+    const tabs = secs.map((sec, idx) => {
+      const abbr = escapeHtml((sec.sectionTitle || '').split(' ')[0][0] || '?');
+      const isActive = idx === 0;
+      return `<button role="tab" class="rp-arch-tab${isActive ? ' active' : ''}" data-tab="${idx}" aria-selected="${isActive}">
+        <span class="tab-full">${escapeHtml(sec.sectionTitle)}</span>
+        <span class="tab-abbr" aria-hidden="true">${abbr}</span>
+      </button>`;
+    }).join('');
+    const panels = secs.map((sec, idx) => {
       const inner = (sec.documents || []).length
         ? sec.documents.map(renderDocCardHtml).join('')
         : '<p class="rp-arch-empty">No documents linked yet.</p>';
-      return `
-      <div class="rp-arch-section" data-arch-section="${idx}">
-        <h3 class="rp-arch-section-heading">${escapeHtml(sec.sectionTitle)}</h3>
+      return `<div class="rp-arch-tab-panel${idx !== 0 ? ' hidden' : ''}" data-panel="${idx}">
         <div class="rp-doc-list">${inner}</div>
       </div>`;
     }).join('');
     return `
       <section class="rp-section rp-architecture-docs rp-docs-attention">
         <div class="rp-section-head rp-doc-details-head"><span>Document Details</span></div>
-        ${blocks}
+        <div class="rp-arch-tabs">
+          <nav class="rp-arch-tab-bar" role="tablist">${tabs}</nav>
+          <div class="rp-arch-tab-panels">${panels}</div>
+        </div>
       </section>`;
   }
 
@@ -330,7 +339,7 @@ const detailPanel = (() => {
       ? renderArchitectureSectionsPanel(node)
       : renderDocumentsSection(node);
     const aiValidateBtn = m.nodeType === 'architecture'
-      ? '<button type="button" class="rp-ai-validate-btn">AI Validate</button>'
+      ? '<button type="button" class="rp-ai-validate-btn" disabled>Validate</button>'
       : '';
     return `
       <section class="rp-section">
@@ -365,6 +374,20 @@ const detailPanel = (() => {
         const { id } = el.dataset;
         const n = byId.get(id);
         if (n) open(n);
+      });
+    });
+
+    // Wire architecture doc tabs
+    body.querySelectorAll('.rp-arch-tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const idx = tab.dataset.tab;
+        body.querySelectorAll('.rp-arch-tab').forEach((t) => {
+          t.classList.toggle('active', t.dataset.tab === idx);
+          t.setAttribute('aria-selected', t.dataset.tab === idx ? 'true' : 'false');
+        });
+        body.querySelectorAll('.rp-arch-tab-panel').forEach((panel) => {
+          panel.classList.toggle('hidden', panel.dataset.panel !== idx);
+        });
       });
     });
   }

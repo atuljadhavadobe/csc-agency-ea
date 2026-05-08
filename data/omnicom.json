@@ -94,7 +94,13 @@
           "status": "complete",
           "reviewed": true,
           "architectureSections": [
-            { "sectionTitle": "Technology Architecture", "documents": [] },
+            { "sectionTitle": "Technology Architecture", "documents": [
+              { "fileName": "2025 H1 NorthStar Architecture", "filePath": "https://lucid.app/lucidchart/cd20e9dc-f347-4bf6-95a7-4ecab2987b30/edit?viewport_loc=-883%2C-1834%2C4893%2C2343%2C0_0&invitationId=inv_194e0356-c3bf-4bd9-86f2-f1c58fc3df71", "customerReviewed": false },
+              { "fileName": "2025 H1 Document Flow", "filePath": "https://lucid.app/lucidchart/cd20e9dc-f347-4bf6-95a7-4ecab2987b30/edit?viewport_loc=-7211%2C-991%2C3626%2C1736%2C82_l5.S9jw4s&invitationId=inv_194e0356-c3bf-4bd9-86f2-f1c58fc3df71", "customerReviewed": false },
+              { "fileName": "2025 H2 NorthStar Architecture", "filePath": "https://lucid.app/lucidchart/cd20e9dc-f347-4bf6-95a7-4ecab2987b30/edit?viewport_loc=-1501%2C-350%2C6281%2C3008%2C12_l-iE1HoVu&invitationId=inv_194e0356-c3bf-4bd9-86f2-f1c58fc3df71", "customerReviewed": false },
+              { "fileName": "2025 H2 Document Flow", "filePath": "https://lucid.app/lucidchart/cd20e9dc-f347-4bf6-95a7-4ecab2987b30/edit?viewport_loc=-6364%2C-773%2C3626%2C1736%2CRKamh-dUsBdJ&invitationId=inv_194e0356-c3bf-4bd9-86f2-f1c58fc3df71", "customerReviewed": false },
+              { "fileName": "Omnicom WIP Strategy", "filePath": "https://lucid.app/lucidchart/1419c44e-446a-4850-b1af-56e3063814c6/edit?viewport_loc=-36%2C-179%2C2773%2C1328%2CwCosm.5wwp_A&invitationId=inv_a798dcf5-0a79-4474-8c87-129f5f20d7a6", "customerReviewed": false }
+            ] },
             { "sectionTitle": "Application Architecture", "documents": [] },
             { "sectionTitle": "Data Architecture", "documents": [] },
             { "sectionTitle": "Business Architecture", "documents": [] }
@@ -108,7 +114,11 @@
           "status": "in-progress",
           "reviewed": true,
           "architectureSections": [
-            { "sectionTitle": "Technology Architecture", "documents": [] },
+            { "sectionTitle": "Technology Architecture", "documents": [
+              { "fileName": "v2.2 - 2026 NorthStar Architecture", "filePath": "https://lucid.app/lucidchart/dd06e5f3-9594-4ceb-aed2-5a1cb0573847/edit?viewport_loc=9%2C-718%2C3626%2C1736%2CE3xz9QHkKLGC&invitationId=inv_08f151e7-2d79-4c61-963e-4fdcce002bb2", "customerReviewed": false },
+              { "fileName": "v3 - 2026 Adobe Internal POV", "filePath": "https://lucid.app/lucidchart/dd06e5f3-9594-4ceb-aed2-5a1cb0573847/edit?viewport_loc=-3710%2C-2462%2C3262%2C1562%2C2Lgzobk8GNTF&invitationId=inv_08f151e7-2d79-4c61-963e-4fdcce002bb2", "customerReviewed": false },
+              { "fileName": "UWI NorthStar", "filePath": "https://lucid.app/lucidchart/1a37a7fa-098b-49e3-a486-a76c7cc81b7c/edit?viewport_loc=-1250%2C416%2C3262%2C1562%2CzU1S5-37Bz4g&invitationId=inv_36d927f2-8d92-484b-a3e8-138d47a4adf0", "customerReviewed": false }
+            ] },
             { "sectionTitle": "Application Architecture", "documents": [] },
             { "sectionTitle": "Data Architecture", "documents": [] },
             { "sectionTitle": "Business Architecture", "documents": [] }
@@ -157,10 +167,10 @@
               "nodeIcon": "./assets/image.png",
               "status": "in-progress",
               "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [{ "fileName": "DR3332562 — CSCv3 Unified Workfront Instance", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM", "customerReviewed": false }] },
-                { "sectionTitle": "Application Architecture", "documents": [{ "fileName": "DR3332562 — CSCv3 Unified Workfront Instance", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM", "customerReviewed": false }] },
-                { "sectionTitle": "Data Architecture", "documents": [{ "fileName": "DR3332562 — CSCv3 Unified Workfront Instance", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM", "customerReviewed": false }] },
-                { "sectionTitle": "Business Architecture", "documents": [{ "fileName": "DR3332562 — CSCv3 Unified Workfront Instance", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM", "customerReviewed": false }] }
+                { "sectionTitle": "Technology Architecture", "documents": [{ "fileName": "UWI Architecture", "filePath": "https://lucid.app/lucidchart/1a37a7fa-098b-49e3-a486-a76c7cc81b7c/edit?viewport_loc=-1250%2C416%2C3262%2C1562%2CzU1S5-37Bz4g&invitationId=inv_36d927f2-8d92-484b-a3e8-138d47a4adf0", "customerReviewed": false }] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
               ]
             }
           ]
@@ -207,10 +217,10 @@
               "nodeIcon": "./assets/image.png",
               "status": "in-progress",
               "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [{ "fileName": "Omni+ Tech Case", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG", "customerReviewed": false }] },
-                { "sectionTitle": "Application Architecture", "documents": [{ "fileName": "Omni+ Tech Case", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG", "customerReviewed": false }] },
-                { "sectionTitle": "Data Architecture", "documents": [{ "fileName": "Omni+ Tech Case", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG", "customerReviewed": false }] },
-                { "sectionTitle": "Business Architecture", "documents": [{ "fileName": "Omni+ Tech Case", "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG", "customerReviewed": false }] }
+                { "sectionTitle": "Technology Architecture", "documents": [{ "fileName": "Omni+ Architecture", "filePath": "https://lucid.app/lucidchart/1a37a7fa-098b-49e3-a486-a76c7cc81b7c/edit?viewport_loc=-3946%2C1044%2C4401%2C2108%2CDB3SbUoaslj3&invitationId=inv_36d927f2-8d92-484b-a3e8-138d47a4adf0", "customerReviewed": false }] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
               ]
             }
           ]

@@ -73,7 +73,7 @@ export default async function decorate(block) {
         </main>
         <aside class="right-panel" id="right-panel" aria-label="Documentation details" hidden>
           <header class="rp-header">
-            <h2 class="rp-panel-title" id="rp-panel-title">Documentation details</h2>
+            <h2 class="rp-panel-title" id="rp-panel-title">Documentation Details</h2>
             <button class="rp-close" id="rp-close" aria-label="Close (Esc)">
               <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4 L12 12 M12 4 L4 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </button>
