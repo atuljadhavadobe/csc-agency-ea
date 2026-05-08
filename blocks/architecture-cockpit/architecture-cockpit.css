@@ -1,3 +1,15 @@
+/* EDS wrapper overrides — full viewport, no centering */
+.architecture-cockpit-wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.architecture-cockpit-container {
+  max-width: 100%;
+  padding: 0;
+}
+
 /* ============================================================================
    Architecture Cockpit — Redesign v1
    Vanilla static (no build step). Cool-neutral palette, indigo accent,
