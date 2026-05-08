@@ -1,2 +1,4 @@
 helix-importer-ui
 *.min.js
+blocks/architecture-cockpit/app.js
+import/

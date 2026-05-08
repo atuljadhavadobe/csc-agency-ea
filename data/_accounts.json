@@ -1,0 +1,10 @@
+{
+  "accounts": [
+    {
+      "id": "omnicom",
+      "title": "Omnicom",
+      "file": "omnicom.json"
+    }
+  ],
+  "default": "omnicom"
+}

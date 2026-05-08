@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" role="img" aria-label="DSS Enterprise Architects">
+  <!-- Red cloud silhouette -->
+  <g fill="#e11d2d">
+    <ellipse cx="60" cy="62" rx="58" ry="22"/>
+    <circle cx="22" cy="50" r="20"/>
+    <circle cx="44" cy="36" r="23"/>
+    <circle cx="74" cy="34" r="23"/>
+    <circle cx="98" cy="48" r="20"/>
+  </g>
+  <!-- Network: edges + nodes in white -->
+  <g stroke="white" stroke-width="1.6" stroke-linecap="round">
+    <line x1="33" y1="55" x2="56" y2="34"/>
+    <line x1="56" y1="34" x2="80" y2="40"/>
+    <line x1="56" y1="34" x2="60" y2="60"/>
+    <line x1="33" y1="55" x2="60" y2="60"/>
+    <line x1="60" y1="60" x2="80" y2="40"/>
+    <line x1="60" y1="60" x2="86" y2="65"/>
+    <line x1="80" y1="40" x2="86" y2="65"/>
+  </g>
+  <g fill="white">
+    <circle cx="33" cy="55" r="3.4"/>
+    <circle cx="56" cy="34" r="3.4"/>
+    <circle cx="80" cy="40" r="3.4"/>
+    <circle cx="60" cy="60" r="3.4"/>
+    <circle cx="86" cy="65" r="3.4"/>
+  </g>
+  <!-- "A" mark in the center -->
+  <text x="64" y="51" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="15" fill="white">A</text>
+</svg>
