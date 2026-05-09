@@ -404,6 +404,18 @@
                 { "sectionTitle": "Data Architecture", "documents": [] },
                 { "sectionTitle": "Business Architecture", "documents": [] }
               ]
+            },{
+              "title": "Solution Integrators CSC",
+              "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
             }
           ]
         }
