@@ -257,7 +257,19 @@
       "title": "POCs",
       "description": "Proof of Concepts — experimental work, prototypes, and feasibility studies.",
       "side": "left",
-      "children": []
+      "status": "in-progress",
+      "documents": [
+        {
+          "fileName": "Omnicom ACPC API POC",
+          "filePath": "https://adobe.sharepoint.com/:v:/r/sites/CustomerInnovationArchitecture/Shared%20Documents/Clients/Accenture/aj-customer-pocs/Omnicom%20ACPC%20API/Omnicom%20ACPC.mp4?csf=1&web=1&e=eeKvpG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D",
+          "customerReviewed": false
+        },
+        {
+          "fileName": "AEM - AEM connect POC",
+          "filePath": "https://f.io/B7VRFvVV",
+          "customerReviewed": false
+        }
+      ]
     },
     {
       "title": "Northstar Technical Assesment (NSTA)",
