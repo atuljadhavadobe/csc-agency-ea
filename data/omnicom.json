@@ -134,15 +134,38 @@
       "children": [
         {
           "title": "Consolidated",
-          "children": []
+          "description": "Consolidated Global Admin Console view (documents to be linked).",
+          "status": "not-started",
+          "documents": []
         },
         {
           "title": "IPG",
-          "children": []
+          "description": "IPG Global Admin Console IMS documentation.",
+          "status": "in-progress",
+          "documents": [
+            {
+              "fileName": "IPG IMS current State",
+              "filePath": "https://lucid.app/lucidspark/27c5304b-2a10-4d1e-a239-f873724e7a39/edit?viewport_loc=12646%2C-1765%2C13183%2C6255%2C0_0&invitationId=inv_69249d77-ea3e-46b0-8c4a-7d24ca4e9047",
+              "customerReviewed": false
+            }
+          ]
         },
         {
           "title": "OMC",
-          "children": []
+          "description": "OMC Global Admin Console IMS current and future state.",
+          "status": "in-progress",
+          "documents": [
+            {
+              "fileName": "OMC IMS Current State",
+              "filePath": "https://lucid.app/lucidspark/27c5304b-2a10-4d1e-a239-f873724e7a39/edit?viewport_loc=12646%2C-1765%2C13183%2C6255%2C0_0&invitationId=inv_69249d77-ea3e-46b0-8c4a-7d24ca4e9047",
+              "customerReviewed": false
+            },
+            {
+              "fileName": "OMC IMS Future State",
+              "filePath": "https://lucid.app/lucidchart/1a37a7fa-098b-49e3-a486-a76c7cc81b7c/edit?viewport_loc=18%2C-529%2C3638%2C1742%2CFxlWN9DGuMWN&invitationId=inv_36d927f2-8d92-484b-a3e8-138d47a4adf0",
+              "customerReviewed": false
+            }
+          ]
         }
       ]
     },
