@@ -286,33 +286,50 @@ a { color: inherit; text-decoration: none; }
 .search-result .result-path { font-size: 10.5px; font-family: var(--mono); color: var(--text-faint); margin-top: 1px; }
 .search-empty { padding: var(--s-3); color: var(--text-faint); font-size: var(--t-sm); text-align: center; }
 
-/* Topbar — Reset (Adobe red, compact) + ghost Fit */
+/* Canvas — floating Reset button (top-center of canvas area) */
 .reset-view-btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: 1px solid #b90d00;
-  background: var(--adobe-red);
-  color: #fff;
+  position: absolute;
+  top: var(--s-4);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(185, 28, 28, 0.30);
+  background: rgba(255, 255, 255, 0.92);
+  color: #b91c1c;
   font-size: var(--t-sm);
   font-weight: 600;
-  letter-spacing: 0.02em;
-  box-shadow: var(--shadow-xs), 0 2px 8px rgba(235, 16, 0, 0.28);
-  transition: transform .2s var(--ease-out), filter .2s var(--ease-out), box-shadow .2s var(--ease-out);
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(8px) saturate(1.4);
+  -webkit-backdrop-filter: blur(8px) saturate(1.4);
+  box-shadow: var(--shadow-sm), 0 2px 8px rgba(185, 28, 28, 0.12);
+  transition: background .2s var(--ease-out), border-color .2s var(--ease-out), color .2s var(--ease-out), box-shadow .2s var(--ease-out), transform .2s var(--ease-spring);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
 }
 .reset-view-btn svg {
   width: 13px; height: 13px;
   flex-shrink: 0;
+  opacity: 0.85;
 }
 .reset-view-btn:hover {
-  filter: brightness(1.07);
-  transform: translateY(-0.5px);
-  box-shadow: var(--shadow-sm), 0 3px 12px rgba(235, 16, 0, 0.38);
+  background: rgba(254, 242, 242, 0.96);
+  border-color: rgba(185, 28, 28, 0.55);
+  color: #991b1b;
+  box-shadow: var(--shadow-md), 0 4px 14px rgba(185, 28, 28, 0.18);
+  transform: translateX(-50%) translateY(-1px);
 }
-.reset-view-btn:active { transform: translateY(0); filter: brightness(0.96); }
+.reset-view-btn:active {
+  transform: translateX(-50%) translateY(0);
+  background: rgba(254, 226, 226, 0.96);
+  box-shadow: var(--shadow-xs);
+}
 .reset-view-btn:focus-visible {
   outline: none;
-  box-shadow: var(--shadow-xs), 0 2px 8px rgba(235, 16, 0, 0.28), 0 0 0 3px var(--adobe-red-soft);
+  box-shadow: var(--shadow-sm), 0 0 0 3px rgba(185, 28, 28, 0.18);
 }
 
 .ghost-btn {

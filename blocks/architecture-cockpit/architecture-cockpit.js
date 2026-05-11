@@ -39,10 +39,6 @@ export default async function decorate(block) {
           </div>
         </div>
         <div class="topbar-right">
-          <button type="button" class="reset-view-btn" id="reset-view" title="Reset view (R)">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8a6 6 0 1 1 1.76 4.24M2 12V8h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Reset
-          </button>
           <button class="ghost-btn" id="fit-view" title="Fit to canvas (F)">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6V3h3M13 6V3h-3M3 10v3h3M13 10v3h-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Fit
@@ -70,6 +66,10 @@ export default async function decorate(block) {
         <main id="canvas-wrap">
           <svg id="canvas"></svg>
           <div class="loading" id="loading">Loading metamodel…</div>
+          <button type="button" class="reset-view-btn" id="reset-view" title="Reset view (R)" aria-label="Reset tree to default view">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8a6 6 0 1 1 1.76 4.24M2 12V8h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reset view
+          </button>
         </main>
         <aside class="right-panel" id="right-panel" aria-label="Documentation details" hidden>
           <header class="rp-header">
