@@ -39,10 +39,7 @@ export default async function decorate(block) {
           </div>
         </div>
         <div class="topbar-right">
-          <button class="ghost-btn" id="fit-view" title="Fit to canvas (F)">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 6V3h3M13 6V3h-3M3 10v3h3M13 10v3h-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Fit
-          </button>
+          <div class="completeness-chip" id="completeness" aria-label="Completeness"></div>
         </div>
       </header>
       <div class="workspace">
@@ -61,7 +58,6 @@ export default async function decorate(block) {
             </section>
             <button class="reset-link" id="reset-filters">Reset filters</button>
           </div>
-          <div class="completeness-chip" id="completeness" aria-label="Completeness"></div>
         </aside>
         <main id="canvas-wrap">
           <svg id="canvas"></svg>

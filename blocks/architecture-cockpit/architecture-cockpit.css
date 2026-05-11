@@ -332,21 +332,6 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--shadow-sm), 0 0 0 3px rgba(185, 28, 28, 0.18);
 }
 
-.ghost-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 7px 12px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text-dim);
-  font-size: var(--t-sm); font-weight: 500;
-  letter-spacing: 0.01em;
-  box-shadow: var(--shadow-xs);
-  transition: all .25s var(--ease-out);
-}
-.ghost-btn svg { width: 13px; height: 13px; }
-.ghost-btn:hover { color: var(--text); border-color: var(--border-strong); transform: translateY(-0.5px); }
-.ghost-btn:active { transform: translateY(0); }
 
 /* ---- AI Validate button (architecture nodes only) ---- */
 .rp-ai-validate-btn {
@@ -425,8 +410,7 @@ a { color: inherit; text-decoration: none; }
   padding: var(--s-6) var(--s-5);
   display: flex; flex-direction: column; gap: var(--s-6);
 }
-.workspace.left-collapsed .panel-body,
-.workspace.left-collapsed .completeness-chip { display: none; }
+.workspace.left-collapsed .panel-body { display: none; }
 
 .panel-eyebrow {
   margin: 0 0 var(--s-3);
@@ -551,31 +535,54 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent);
 }
 
-/* Completeness summary at bottom of left panel */
+/* Completeness widget — topbar right slot */
 .completeness-chip {
-  border-top: 1px solid var(--border);
-  padding: var(--s-4) var(--s-5);
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: 6px 14px;
+  border-radius: 10px;
   background: var(--bg-subtle);
-  display: flex; flex-direction: column; gap: var(--s-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
   font-feature-settings: "tnum";
+  white-space: nowrap;
 }
-.completeness-chip .cc-row { display: flex; align-items: baseline; justify-content: space-between; }
-.completeness-chip .cc-percent {
-  font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: clamp(28px, 2rem, 36px);
-  color: var(--text-strong);
-  letter-spacing: -0.02em; line-height: 1;
+.completeness-chip .cc-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 .completeness-chip .cc-label {
-  font-size: 10px; font-weight: 600;
-  text-transform: uppercase; letter-spacing: 0.14em;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
   color: var(--text-faint);
+  line-height: 1;
+}
+.completeness-chip .cc-percent {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-strong);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.completeness-chip .cc-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border);
+  flex-shrink: 0;
 }
 .completeness-chip .cc-track {
-  width: 100%; height: 4px;
+  width: 72px;
+  height: 4px;
   background: var(--bg-strong);
   border-radius: 999px;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .completeness-chip .cc-fill {
   height: 100%;
@@ -583,9 +590,31 @@ a { color: inherit; text-decoration: none; }
   border-radius: 999px;
   transition: width 0.6s var(--ease-spring);
 }
-.completeness-chip .cc-meta { display: flex; gap: var(--s-3); font-size: 10.5px; color: var(--text-dim); }
-.completeness-chip .cc-meta .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 4px; }
-.completeness-chip .cc-meta strong { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.completeness-chip .cc-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.completeness-chip .cc-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  color: var(--text-dim);
+  line-height: 1;
+}
+.completeness-chip .cc-meta .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.completeness-chip .cc-meta strong {
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
 
 /* ============================================================================
    Canvas

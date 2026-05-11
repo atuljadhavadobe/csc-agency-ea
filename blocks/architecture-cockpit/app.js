@@ -656,9 +656,11 @@ function renderCompleteness() {
   host.innerHTML = `
     <div class="cc-row">
       <span class="cc-label">Coverage</span>
-      <span class="cc-percent">${percent}<span style="font-family:var(--sans);font-style:normal;font-size:12px;color:var(--text-faint);font-weight:600;margin-left:2px">%</span></span>
+      <span class="cc-percent">${percent}%</span>
     </div>
+    <div class="cc-divider" aria-hidden="true"></div>
     <div class="cc-track" title="${percent}% complete (weighted)"><div class="cc-fill" style="width:${percent}%"></div></div>
+    <div class="cc-divider" aria-hidden="true"></div>
     <div class="cc-meta">
       <span><span class="dot" style="background:var(--st-complete)"></span><strong>${buckets.complete}</strong> done</span>
       <span><span class="dot" style="background:var(--st-progress)"></span><strong>${buckets['in-progress']}</strong> wip</span>
@@ -1302,10 +1304,6 @@ async function bootstrap() {
     // Slight delay so the close transition + collapse update settle, then center.
     setTimeout(() => renderer.fitToView(), 360);
   });
-  document.getElementById('fit-view').addEventListener('click', () => {
-    if (renderer) renderer.fitToView();
-  });
-
   // Global keys
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') { detailPanel.close(); closeModalPopup(); }
