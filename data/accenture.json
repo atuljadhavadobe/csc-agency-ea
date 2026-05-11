@@ -1,0 +1,571 @@
+{
+  "title": "Omnicom",
+  "description": "Architecture knowledge map for the Accenture account.",
+  "logo": "https://www.omc.com/wp-content/uploads/2025/11/Omnicom-Logo.png",
+  "children": [
+    {
+      "title": "Account Overview",
+      "description": "One-page summary of the account, key stakeholders, and where to find what.",
+      "side": "left",
+      "children": [
+        {
+          "title": "Account Team",
+          "description": "Account stakeholders, decision-makers, and RACI matrix.",
+          "status": "complete",
+          "url": "https://adobe.sharepoint.com/:b:/r/sites/Omnicom464/Shared%20Documents/General/Adobe%20Account%20Team/Omnicom%20Team%20Slide.pdf?csf=1&web=1&e=hBYHHn"
+        },
+        {
+          "title": "Account Plans",
+          "description": "Account stakeholders, decision-makers, and RACI matrix.",
+          "status": "complete",
+          "documents": []
+        },
+        {
+          "title": "RTB",
+          "description": "Quarterly SPA Value RTB decks.",
+          "status": "complete",
+          "documents": []
+        },
+        {
+          "title": "EA Monthly Readout",
+          "description": "Monthly EA SPA team readout decks.",
+          "status": "complete",
+          "documents": []
+        }
+      ]
+    },
+    {
+      "title": "NorthStar Architecture",
+      "description": "Target-state architecture documents by fiscal year.",
+      "children": [
+        {
+          "title": "Year 2025",
+          "description": "2025 H2 NorthStar Architecture (executions H1/H2).",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "complete",
+          "reviewed": true,
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Application Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Data Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Business Architecture",
+              "documents": []
+            }
+          ]
+        },
+        {
+          "title": "Year 2026",
+          "description": "Omnicom NorthStar 2026 (v3) — 2026 NorthStar Architecture.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "in-progress",
+          "reviewed": true,
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Application Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Data Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Business Architecture",
+              "documents": []
+            }
+          ]
+        }
+      ],
+      "side": "right"
+    },
+    {
+      "title": "Global Admin Console",
+      "description": "Global Admin Console architecture (consolidated, decision logs, IPG, OMC).",
+      "side": "left",
+      "children": [
+        {
+          "title": "Consolidated",
+          "description": "Consolidated Global Admin Console view (documents to be linked).",
+          "status": "not-started",
+          "documents": []
+        },
+        {
+          "title": "IPG",
+          "description": "IPG Global Admin Console IMS documentation.",
+          "status": "in-progress",
+          "documents": []
+        },
+        {
+          "title": "OMC",
+          "description": "OMC Global Admin Console IMS current and future state.",
+          "status": "in-progress",
+          "documents": []
+        }
+      ]
+    },
+    {
+      "title": "Tech cases",
+      "description": "DRs and other technical case decks.",
+      "children": [
+        {
+          "title": "DR3332562",
+          "description": "Omnicom CSCv3",
+          "children": [
+            {
+              "title": "Omnicom CSCv3",
+              "description": "Unified Workfront instance technical case (CSCv3).",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omnicom CSCv3",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "in-progress",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "DR4842094",
+          "description": "Transformational deal technical case for Q2 2026.",
+          "children": [
+            {
+              "title": "Transformational Deal (Q2 2026)",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR4842094%20-%20Transformational%20Deal%20(Q2%E2%80%AF2026)/DR4842094%20-%20Transformational%20Deal.pptx?d=wbe21ca48431247ce938b10535fa2ecac&csf=1&web=1&e=03O34b"
+            },
+            {
+              "title": "Architectures",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "in-progress",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Other: UWI (unified workfront instance)",
+          "description": "Omni+ technical case overview.",
+          "children": [
+            {
+              "title": "Omni+ Tech Case",
+              "description": "Omni+ technical case overview.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omni+ technical case overview.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "in-progress",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Other: Omni+",
+          "description": "Omni+ technical case overview.",
+          "children": [
+            {
+              "title": "Omni+ Tech Case",
+              "description": "Omni+ technical case overview.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omni+ technical case overview.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "in-progress",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "side": "right"
+    },
+    {
+      "title": "POCs",
+      "description": "Proof of Concepts — experimental work, prototypes, and feasibility studies.",
+      "side": "left",
+      "status": "in-progress",
+      "documents": []
+    },
+    {
+      "title": "Northstar Technical Assesment (NSTA)",
+      "description": "NorthStar Technical Assessments per fiscal year.",
+      "status": "in-progress",
+      "documents": []
+    },
+    {
+      "title": "Accenture - Integrators Use Cases",
+      "description": "Agency Specific Use Cases.",
+      "side": "right",
+      "children": [
+        {
+          "title": "Creative",
+          "description": "Unified Workfront instance technical case (CSCv3).",
+          "children": [
+            {
+              "title": "In PROGRESS",
+              "description": "Unified Workfront instance technical case (CSCv3).",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM"
+            },
+            {
+              "title": "Architectures",
+              "description": "Unified Workfront instance technical case (CSCv3).",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Media",
+          "description": "Transformational deal technical case for Q2 2026.",
+          "children": [
+            {
+              "title": "In PROGRESS",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR4842094%20-%20Transformational%20Deal%20(Q2%E2%80%AF2026)/DR4842094%20-%20Transformational%20Deal.pptx?d=wbe21ca48431247ce938b10535fa2ecac&csf=1&web=1&e=03O34b"
+            },
+            {
+              "title": "Architectures",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Primary",
+          "description": "Omni+ technical case overview.",
+          "children": [
+            {
+              "title": "Primary",
+              "description": "Omni+ technical case overview.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omni+ technical case overview.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Architecture Blueprints",
+      "description": "Reference blueprints for CSC, agency, and other architecture patterns.",
+      "side": "right",
+      "children": [
+        {
+          "title": "CSC Blueprints",
+          "description": "Adobe CSC reference architecture blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "in-progress",
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Application Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Data Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Business Architecture",
+              "documents": []
+            }
+          ]
+        },
+        {
+          "title": "Agentic AI CSC Blueprints",
+          "description": "Additional architecture reference blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "not-started",
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Application Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Data Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Business Architecture",
+              "documents": []
+            }
+          ]
+        },
+        {
+          "title": "Other Blueprints",
+          "description": "Additional architecture reference blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "not-started",
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Application Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Data Architecture",
+              "documents": []
+            },
+            {
+              "sectionTitle": "Business Architecture",
+              "documents": []
+            }
+          ]
+        },
+        {
+          "title": "Agency Blueprints",
+          "description": "Architecture blueprints for agency access and integration patterns.",
+          "children": [
+            {
+              "title": "Identity First CSC",
+              "description": "Agencies are provisioned access to brand instances to produce deliverables. This requires proper access governance, ensuring that only the necessary access needed for agency work is granted.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            },
+            {
+              "title": "Integrations First CSC",
+              "description": "Agencies own their credits, operate within their own instances, integrate with brand instances and share deliverables with brands. This requires seamless integration between multiple CSCs.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            },
+            {
+              "title": "Solution Integrators CSC",
+              "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                {
+                  "sectionTitle": "Technology Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Application Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Data Architecture",
+                  "documents": []
+                },
+                {
+                  "sectionTitle": "Business Architecture",
+                  "documents": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
