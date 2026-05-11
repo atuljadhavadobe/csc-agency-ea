@@ -4,6 +4,21 @@
       "id": "omnicom",
       "title": "Omnicom",
       "file": "omnicom.json"
+    },
+    {
+      "id": "accenture",
+      "title": "Accenture",
+      "file": "accenture.json"
+    },
+    {
+      "id": "wpp",
+      "title": "WPP",
+      "file": "wpp.json"
+    },
+    {
+      "id": "Publicis",
+      "title": "Publicis",
+      "file": "publicis.json"
     }
   ],
   "default": "omnicom"
