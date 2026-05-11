@@ -256,7 +256,7 @@
     {
       "title": "POCs",
       "description": "Proof of Concepts — experimental work, prototypes, and feasibility studies.",
-      "side": "right",
+      "side": "left",
       "children": []
     },
     {
@@ -274,8 +274,89 @@
           "filePath": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/NSTA/2026/Omnicom-NSTA-TechnicalAssesment-v2026.pptx?d=wdc866c5cf19f40bbbf9b8420f246280e&csf=1&web=1&e=976595",
           "customerReviewed": false
         }
-      ],
-      "side": "right"
+      ]
+    },
+    {
+      "title": "Omnicom Agency Use Cases",
+      "description": "Agency Specific Use Cases.",
+      "side": "right",
+      "children": [
+        {
+          "title": "Creative",
+          "description": "Unified Workfront instance technical case (CSCv3).",
+          "children": [
+            {
+              "title": "In PROGRESS",
+              "description": "Unified Workfront instance technical case (CSCv3).",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM"
+            },
+            {
+              "title": "Architectures",
+              "description": "Unified Workfront instance technical case (CSCv3).",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Media",
+          "description": "Transformational deal technical case for Q2 2026.",
+          "children": [
+            {
+              "title": "In PROGRESS",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR4842094%20-%20Transformational%20Deal%20(Q2%E2%80%AF2026)/DR4842094%20-%20Transformational%20Deal.pptx?d=wbe21ca48431247ce938b10535fa2ecac&csf=1&web=1&e=03O34b"
+            },
+            {
+              "title": "Architectures",
+              "description": "Transformational deal technical case for Q2 2026.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Primary",
+          "description": "Omni+ technical case overview.",
+          "children": [
+            {
+              "title": "Primary",
+              "description": "Omni+ technical case overview.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omni+ technical case overview.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Architecture Blueprints",
@@ -371,88 +452,6 @@
             {
               "title": "Solution Integrators CSC",
               "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Omnicom Agency Use Cases",
-      "description": "Agency Specific Use Cases.",
-      "side": "right",
-      "children": [
-        {
-          "title": "Creative",
-          "description": "Unified Workfront instance technical case (CSCv3).",
-          "children": [
-            {
-              "title": "In PROGRESS",
-              "description": "Unified Workfront instance technical case (CSCv3).",
-              "status": "in-progress",
-              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM"
-            },
-            {
-              "title": "Architectures",
-              "description": "Unified Workfront instance technical case (CSCv3).",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Media",
-          "description": "Transformational deal technical case for Q2 2026.",
-          "children": [
-            {
-              "title": "In PROGRESS",
-              "description": "Transformational deal technical case for Q2 2026.",
-              "status": "in-progress",
-              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR4842094%20-%20Transformational%20Deal%20(Q2%E2%80%AF2026)/DR4842094%20-%20Transformational%20Deal.pptx?d=wbe21ca48431247ce938b10535fa2ecac&csf=1&web=1&e=03O34b"
-            },
-            {
-              "title": "Architectures",
-              "description": "Transformational deal technical case for Q2 2026.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Primary",
-          "description": "Omni+ technical case overview.",
-          "children": [
-            {
-              "title": "Primary",
-              "description": "Omni+ technical case overview.",
-              "status": "in-progress",
-              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
-            },
-            {
-              "title": "Architectures",
-              "description": "Omni+ technical case overview.",
               "nodeType": "architecture",
               "nodeIcon": "./assets/image.png",
               "status": "not-started",
