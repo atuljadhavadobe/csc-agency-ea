@@ -47,17 +47,6 @@ export default async function decorate(block) {
           <button class="panel-collapse-btn" id="left-panel-toggle" aria-label="Collapse panel" title="Collapse ([)">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 4 L6 8 L10 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <div class="panel-body">
-            <section class="panel-section">
-              <h4 class="panel-eyebrow">Status</h4>
-              <div class="filter-list" id="filter-status"></div>
-            </section>
-            <section class="panel-section">
-              <h4 class="panel-eyebrow">Node Types</h4>
-              <div class="legend-list" id="legend-list"></div>
-            </section>
-            <button class="reset-link" id="reset-filters">Reset filters</button>
-          </div>
         </aside>
         <main id="canvas-wrap">
           <svg id="canvas"></svg>

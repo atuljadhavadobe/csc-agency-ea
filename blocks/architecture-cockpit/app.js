@@ -21,7 +21,7 @@ const STATUS_TO_CLASS = { complete: 'complete', 'in-progress': 'progress', 'not-
 const STATUS_LABELS = { complete: 'Complete', 'in-progress': 'In-Progress', 'not-started': 'Not Started' };
 const STATUS_WEIGHTS = { complete: 1.0, 'in-progress': 0.5, 'not-started': 0.0 };
 
-const FILTER_STORE_KEY = 'amm.filters.v3'; // bumped again to invalidate any stale state
+const FILTER_STORE_KEY = 'amm.filters.v4'; // bumped to reset collapsed default + new topbar filter buttons
 const PANEL_STORE_KEY = 'amm.left-panel.collapsed';
 const NARROW_VIEWPORT = 1100; // below this, right panel is replaced by modal
 
@@ -512,7 +512,7 @@ popupEls.backdrop.addEventListener('click', (e) => {
 const filters = (() => {
   const defaults = {
     statuses: [...STATUS_VALUES], // all on by default
-    leftCollapsed: false,
+    leftCollapsed: true,
   };
   let state = loadState();
 
@@ -543,15 +543,19 @@ const filters = (() => {
   function topLevelEnabled() { return true; }
 
   // ----- UI mounting -----
-  function mount(treeRoot) {
+  function mount() {
     mountStatus();
     mountLegend();
-    document.getElementById('reset-filters').onclick = () => {
-      state = { ...defaults };
-      saveState();
-      mount(treeRoot);
-      apply();
-    };
+    const resetBtn = document.getElementById('reset-filters');
+    if (resetBtn) {
+      resetBtn.onclick = () => {
+        state = { ...defaults };
+        saveState();
+        mount();
+        apply();
+        renderCompleteness();
+      };
+    }
     document.getElementById('left-panel-toggle').onclick = () => {
       state.leftCollapsed = !state.leftCollapsed;
       saveState();
@@ -568,6 +572,7 @@ const filters = (() => {
 
   function mountStatus() {
     const c = document.getElementById('filter-status');
+    if (!c) return;
     c.innerHTML = '';
     const counts = { complete: 0, 'in-progress': 0, 'not-started': 0 };
     for (const l of leaves) counts[l.meta.status] = (counts[l.meta.status] || 0) + 1;
@@ -632,8 +637,20 @@ const filters = (() => {
     }
   }
 
+  function toggleStatus(s) {
+    if (state.statuses.includes(s)) {
+      state.statuses = state.statuses.filter((x) => x !== s);
+    } else {
+      state.statuses = [...new Set([...state.statuses, s])];
+    }
+    if (state.statuses.length === 0) state.statuses = [...STATUS_VALUES];
+    saveState();
+    apply();
+    renderCompleteness();
+  }
+
   return {
-    mount, apply, leafPasses, topLevelEnabled, getState: () => state,
+    mount, apply, leafPasses, topLevelEnabled, getState: () => state, toggleStatus,
   };
 })();
 
@@ -652,21 +669,39 @@ function computeCompleteness() {
 function renderCompleteness() {
   const host = document.getElementById('completeness');
   if (!host) return;
-  const { buckets, total, percent } = computeCompleteness();
+  const { buckets, percent } = computeCompleteness();
+  const active = filters.getState().statuses;
+
+  const btnDefs = [
+    { key: 'complete', label: 'Done', cls: 'cc-done' },
+    { key: 'in-progress', label: 'WIP', cls: 'cc-wip' },
+    { key: 'not-started', label: 'TODO', cls: 'cc-todo' },
+  ];
+
+  const btns = btnDefs.map(({ key, label, cls }) => {
+    const isActive = active.includes(key);
+    return `<button class="cc-filter-btn ${cls}${isActive ? ' active' : ''}" data-status="${key}" aria-pressed="${isActive}" title="Toggle ${label} filter">
+      <span class="cc-filter-count">${buckets[key] || 0}</span>
+      <span class="cc-filter-label">${label}</span>
+    </button>`;
+  }).join('');
+
   host.innerHTML = `
-    <div class="cc-row">
+    <div class="cc-coverage">
       <span class="cc-label">Coverage</span>
       <span class="cc-percent">${percent}%</span>
     </div>
-    <div class="cc-divider" aria-hidden="true"></div>
-    <div class="cc-track" title="${percent}% complete (weighted)"><div class="cc-fill" style="width:${percent}%"></div></div>
-    <div class="cc-divider" aria-hidden="true"></div>
-    <div class="cc-meta">
-      <span><span class="dot" style="background:var(--st-complete)"></span><strong>${buckets.complete}</strong> done</span>
-      <span><span class="dot" style="background:var(--st-progress)"></span><strong>${buckets['in-progress']}</strong> wip</span>
-      <span><span class="dot" style="background:var(--st-notstarted)"></span><strong>${buckets['not-started']}</strong> todo</span>
+    <div class="cc-status-btns">${btns}</div>
+    <div class="cc-track" title="${percent}% complete (weighted)">
+      <div class="cc-fill" style="width:${percent}%"></div>
     </div>
   `;
+
+  host.querySelectorAll('.cc-filter-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filters.toggleStatus(btn.dataset.status);
+    });
+  });
 }
 
 /* ============================================================================
@@ -1244,7 +1279,7 @@ async function loadAccount(account) {
       ignoreLocation: true,
     });
 
-    filters.mount(tree);
+    filters.mount();
     // No filters.apply() here. The renderer's own update() in setData() has
     // already painted the clean default state (no highlight, no dim, no focus).
     // apply() runs only when the user actually toggles a filter — that prevents
