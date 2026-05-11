@@ -152,17 +152,17 @@
       "children": [
         {
           "title": "DR3332562",
-          "description": "Unified Workfront instance technical case (CSCv3).",
+          "description": "Omnicom CSCv3",
           "children": [
             {
-              "title": "CSCv3 — Unified Workfront Instance",
+              "title": "Omnicom CSCv3",
               "description": "Unified Workfront instance technical case (CSCv3).",
               "status": "in-progress",
               "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance/DR3332562%20-%20CSCv3%20-%20Unified%20Workfront%20Instance.pptx?d=wc0dfec5fbcd541559f612a1039700764&csf=1&web=1&e=UcWiUM"
             },
             {
               "title": "Architectures",
-              "description": "Unified Workfront instance technical case (CSCv3).",
+              "description": "Omnicom CSCv3",
               "nodeType": "architecture",
               "nodeIcon": "./assets/image.png",
               "status": "in-progress",
@@ -201,6 +201,31 @@
           ]
         },
         {
+          "title": "Other: UWI (unified workfront instance)",
+          "description": "Omni+ technical case overview.",
+          "children": [
+            {
+              "title": "Omni+ Tech Case",
+              "description": "Omni+ technical case overview.",
+              "status": "in-progress",
+              "url": "https://adobe.sharepoint.com/:p:/r/sites/StrategicPartnershipAccounts/Shared%20Documents/Accounts%20(Plans,%20QBR,%20RTB)/Omnicom/Tech%20Cases/Omni+/Omniplus.pptx?d=w4232f2ac3f25478b81aa7538f132dd20&csf=1&web=1&e=lXEcyG"
+            },
+            {
+              "title": "Architectures",
+              "description": "Omni+ technical case overview.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "in-progress",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [{ "fileName": "Omni+ Architecture", "filePath": "https://lucid.app/lucidchart/1a37a7fa-098b-49e3-a486-a76c7cc81b7c/edit?viewport_loc=-3946%2C1044%2C4401%2C2108%2CDB3SbUoaslj3&invitationId=inv_36d927f2-8d92-484b-a3e8-138d47a4adf0", "customerReviewed": false }] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            }
+          ]
+        },
+        {
           "title": "Other: Omni+",
           "description": "Omni+ technical case overview.",
           "children": [
@@ -231,7 +256,7 @@
     {
       "title": "POCs",
       "description": "Proof of Concepts — experimental work, prototypes, and feasibility studies.",
-      "side": "left",
+      "side": "right",
       "children": []
     },
     {
@@ -253,10 +278,117 @@
       "side": "right"
     },
     {
-      "title": "Agency Use Cases",
+      "title": "Architecture Blueprints",
+      "description": "Reference blueprints for CSC, agency, and other architecture patterns.",
+      "side": "right",
+      "children": [
+        {
+          "title": "CSC Blueprints",
+          "description": "Adobe CSC reference architecture blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "in-progress",
+          "architectureSections": [
+            {
+              "sectionTitle": "Technology Architecture",
+              "documents": [
+                {
+                  "fileName": "CSC Technology Architecture Blueprint",
+                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
+                  "Blueprint owner": "David Benge"
+                },{
+                  "fileName": "FSI CSC Blueprint",
+                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
+                  "Blueprint owner": "Gary Pugh"
+                },{
+                  "fileName": "Retail CSC Blueprint",
+                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
+                  "Blueprint owner": ""
+                }
+              ]
+            },
+            { "sectionTitle": "Application Architecture", "documents": [] },
+            { "sectionTitle": "Data Architecture", "documents": [] },
+            { "sectionTitle": "Business Architecture", "documents": [] }
+          ]
+        },
+        {
+          "title": "Agentic AI CSC Blueprints",
+          "description": "Additional architecture reference blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "not-started",
+          "architectureSections": [
+            { "sectionTitle": "Technology Architecture", "documents": [] },
+            { "sectionTitle": "Application Architecture", "documents": [] },
+            { "sectionTitle": "Data Architecture", "documents": [] },
+            { "sectionTitle": "Business Architecture", "documents": [] }
+          ]
+        },
+        {
+          "title": "Other Blueprints",
+          "description": "Additional architecture reference blueprints.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "not-started",
+          "architectureSections": [
+            { "sectionTitle": "Technology Architecture", "documents": [] },
+            { "sectionTitle": "Application Architecture", "documents": [] },
+            { "sectionTitle": "Data Architecture", "documents": [] },
+            { "sectionTitle": "Business Architecture", "documents": [] }
+          ]
+        },
+        {
+          "title": "Agency Blueprints",
+          "description": "Architecture blueprints for agency access and integration patterns.",
+          "children": [
+            {
+              "title": "Identity First CSC",
+              "description": "Agencies are provisioned access to brand instances to produce deliverables. This requires proper access governance, ensuring that only the necessary access needed for agency work is granted.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            },
+            {
+              "title": "Integrations First CSC",
+              "description": "Agencies own their credits, operate within their own instances, integrate with brand instances and share deliverables with brands. This requires seamless integration between multiple CSCs.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            },
+            {
+              "title": "Solution Integrators CSC",
+              "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
+              "nodeType": "architecture",
+              "nodeIcon": "./assets/image.png",
+              "status": "not-started",
+              "architectureSections": [
+                { "sectionTitle": "Technology Architecture", "documents": [] },
+                { "sectionTitle": "Application Architecture", "documents": [] },
+                { "sectionTitle": "Data Architecture", "documents": [] },
+                { "sectionTitle": "Business Architecture", "documents": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Omnicom Agency Use Cases",
       "description": "Agency Specific Use Cases.",
       "side": "right",
-      "color": "red",
       "children": [
         {
           "title": "Creative",
@@ -321,100 +453,6 @@
             {
               "title": "Architectures",
               "description": "Omni+ technical case overview.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Architecture Blueprints",
-      "description": "Reference blueprints for CSC, agency, and other architecture patterns.",
-      "side": "left",
-      "children": [
-        {
-          "title": "CSC Blueprints",
-          "description": "Adobe CSC reference architecture blueprints.",
-          "nodeType": "architecture",
-          "nodeIcon": "./assets/image.png",
-          "status": "in-progress",
-          "architectureSections": [
-            {
-              "sectionTitle": "Technology Architecture",
-              "documents": [
-                {
-                  "fileName": "CSC Technology Architecture Blueprint",
-                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
-                  "Blueprint owner": "David Benge"
-                },{
-                  "fileName": "FSI CSC Blueprint",
-                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
-                  "Blueprint owner": "Gary Pugh"
-                },{
-                  "fileName": "Retail CSC Blueprint",
-                  "filePath": "https://lucid.app/lucidchart/023f5bbb-a2ce-4102-b75b-26238ac92ff2/edit?viewport_loc=65%2C-1201%2C5868%2C2810%2C481zcGa~NjqU&invitationId=inv_5e73fbaa-54d4-41dd-921b-d7c82cb401e8",
-                  "Blueprint owner": ""
-                }
-              ]
-            },
-            { "sectionTitle": "Application Architecture", "documents": [] },
-            { "sectionTitle": "Data Architecture", "documents": [] },
-            { "sectionTitle": "Business Architecture", "documents": [] }
-          ]
-        },
-        {
-          "title": "Other Blueprints",
-          "description": "Additional architecture reference blueprints.",
-          "nodeType": "architecture",
-          "nodeIcon": "./assets/image.png",
-          "status": "not-started",
-          "architectureSections": [
-            { "sectionTitle": "Technology Architecture", "documents": [] },
-            { "sectionTitle": "Application Architecture", "documents": [] },
-            { "sectionTitle": "Data Architecture", "documents": [] },
-            { "sectionTitle": "Business Architecture", "documents": [] }
-          ]
-        },
-        {
-          "title": "Agency Blueprints",
-          "description": "Architecture blueprints for agency access and integration patterns.",
-          "children": [
-            {
-              "title": "Identity First CSC",
-              "description": "Agencies are provisioned access to brand instances to produce deliverables. This requires proper access governance, ensuring that only the necessary access needed for agency work is granted.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            },
-            {
-              "title": "Integrations First CSC",
-              "description": "Agencies own their credits, operate within their own instances, integrate with brand instances and share deliverables with brands. This requires seamless integration between multiple CSCs.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            },{
-              "title": "Solution Integrators CSC",
-              "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
               "nodeType": "architecture",
               "nodeIcon": "./assets/image.png",
               "status": "not-started",
