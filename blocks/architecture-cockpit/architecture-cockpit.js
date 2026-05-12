@@ -92,21 +92,25 @@ export default async function decorate(block) {
   link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap';
   document.head.appendChild(link);
 
-  loadCSS(`${window.hlx.codeBasePath}/blocks/architecture-cockpit/auth.css`);
-  parseTokenFromHash();
+  const skipAuth = new URLSearchParams(window.location.search).has('noauth');
 
-  if (!isAuthenticated()) {
-    hideTopbarControls();
-    renderLoginCard(block.querySelector('.workspace'));
-    return;
-  }
+  if (!skipAuth) {
+    loadCSS(`${window.hlx.codeBasePath}/blocks/architecture-cockpit/auth.css`);
+    parseTokenFromHash();
 
-  showTopbarControls();
-  removeLoginCard();
+    if (!isAuthenticated()) {
+      hideTopbarControls();
+      renderLoginCard(block.querySelector('.workspace'));
+      return;
+    }
 
-  const profile = await fetchUserProfile(getStoredToken());
-  if (profile) {
-    renderUserBadge(block.querySelector('.topbar-right'), profile);
+    showTopbarControls();
+    removeLoginCard();
+
+    const profile = await fetchUserProfile(getStoredToken());
+    if (profile) {
+      renderUserBadge(block.querySelector('.topbar-right'), profile);
+    }
   }
 
   await loadScript('https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js');
