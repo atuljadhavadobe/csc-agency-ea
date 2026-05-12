@@ -1,3 +1,11 @@
+import {
+  parseTokenFromHash, isAuthenticated, getStoredToken, fetchUserProfile,
+} from './auth.js';
+import {
+  renderLoginCard, removeLoginCard,
+  hideTopbarControls, showTopbarControls, renderUserBadge,
+} from './auth-ui.js';
+
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
@@ -6,6 +14,13 @@ function loadScript(src) {
     script.onerror = reject;
     document.head.appendChild(script);
   });
+}
+
+function loadCSS(href) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
 }
 
 export default async function decorate(block) {
@@ -76,6 +91,23 @@ export default async function decorate(block) {
   link.rel = 'stylesheet';
   link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap';
   document.head.appendChild(link);
+
+  loadCSS(`${window.hlx.codeBasePath}/blocks/architecture-cockpit/auth.css`);
+  parseTokenFromHash();
+
+  if (!isAuthenticated()) {
+    hideTopbarControls();
+    renderLoginCard(block.querySelector('.workspace'));
+    return;
+  }
+
+  showTopbarControls();
+  removeLoginCard();
+
+  const profile = await fetchUserProfile(getStoredToken());
+  if (profile) {
+    renderUserBadge(block.querySelector('.topbar-right'), profile);
+  }
 
   await loadScript('https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js');
   await loadScript('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js');

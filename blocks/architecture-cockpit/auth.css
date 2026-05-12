@@ -1,0 +1,111 @@
+.auth-hidden {
+  display: none !important;
+}
+
+.workspace.auth-gated {
+  display: flex;
+}
+
+.workspace.auth-gated > :not(.auth-login-card) {
+  display: none;
+}
+
+.auth-login-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: var(--bg-canvas, #fafbfc);
+}
+
+.auth-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 360px;
+  padding: 48px 40px;
+  background: var(--bg-surface, #fff);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  text-align: center;
+}
+
+.auth-adobe-logo {
+  width: 40px;
+  height: 36px;
+}
+
+.auth-card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text, #0b1220);
+}
+
+.auth-card-desc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-faint, #8a93a3);
+  line-height: 1.5;
+}
+
+.auth-signin-btn {
+  margin-top: 8px;
+  padding: 10px 32px;
+  background: var(--adobe-red, #eb1000);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.auth-signin-btn:hover {
+  background: #c40d00;
+}
+
+.auth-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px 4px 12px;
+  background: var(--bg-surface, #fff);
+  border: 1px solid #e2e5ea;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text, #0b1220);
+}
+
+.auth-user-name {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.auth-logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-faint, #8a93a3);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.auth-logout-btn:hover {
+  color: var(--adobe-red, #eb1000);
+}
+
+.auth-logout-btn svg {
+  width: 16px;
+  height: 16px;
+}
