@@ -93,6 +93,23 @@
       "description": "Target-state architecture documents by fiscal year.",
       "children": [
         {
+          "title": "Year 2024",
+          "description": "2024 NorthStar Architecture.",
+          "nodeType": "architecture",
+          "nodeIcon": "./assets/image.png",
+          "status": "complete",
+          "reviewed": true,
+          "architectureSections": [
+            { "sectionTitle": "Technology Architecture", "documents": [
+              { "fileName": "NorthStar Architecture", "filePath": "https://lucid.app/lucidchart/facb48ab-d07e-44d0-ad5d-9ad220d25cab/edit?viewport_loc=837%2C1102%2C1476%2C707%2C0_0&invitationId=inv_c1b618c0-58fe-42b8-9b86-2f5ae581ee6c", "customerReviewed": false },
+              { "fileName": "Document Flow", "filePath": "https://lucid.app/lucidchart/facb48ab-d07e-44d0-ad5d-9ad220d25cab/edit?viewport_loc=1557%2C1227%2C2934%2C1405%2CmD_le7IVg7cL&invitationId=inv_c1b618c0-58fe-42b8-9b86-2f5ae581ee6c", "customerReviewed": false }
+            ] },
+            { "sectionTitle": "Application Architecture", "documents": [] },
+            { "sectionTitle": "Data Architecture", "documents": [] },
+            { "sectionTitle": "Business Architecture", "documents": [] }
+          ]
+        },
+        {
           "title": "Year 2025",
           "description": "2025 H2 NorthStar Architecture (executions H1/H2).",
           "nodeType": "architecture",
@@ -435,7 +452,7 @@
           ]
         },
         {
-          "title": "Agentic AI CSC Blueprints",
+          "title": "Solution Integrators CSC",
           "description": "Additional architecture reference blueprints.",
           "nodeType": "architecture",
           "nodeIcon": "./assets/image.png",
