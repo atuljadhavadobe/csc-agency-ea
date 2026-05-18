@@ -84,6 +84,15 @@ export default async function decorate(block) {
       <div class="popup-backdrop hidden" id="popup-backdrop">
         <div class="popup" id="popup" role="dialog" aria-modal="true"></div>
       </div>
+      <div id="doc-viewer-overlay" class="doc-viewer-overlay hidden" role="dialog" aria-modal="true" aria-label="Document viewer">
+        <div class="dv-header">
+          <span class="dv-title"></span>
+          <button class="dv-close" type="button" aria-label="Close viewer">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4 L12 12 M12 4 L4 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <iframe class="dv-iframe" title="Document viewer" allow="fullscreen"></iframe>
+      </div>
     </div>
   `;
 
