@@ -251,7 +251,7 @@ const detailPanel = (() => {
         <div class="rp-doc-card">
           <dl class="rp-doc-grid">
             <dt>Document title</dt>
-            <dd><button class="rp-doc-title-link rp-doc-open-btn" type="button" data-href="${href}" data-title="${fname}">${fname}</button></dd>
+            <dd><a class="rp-doc-title-link" href="${href}" target="_blank" rel="noopener noreferrer">${fname}</a></dd>
             <dt>Document type</dt><dd>${docType}</dd>
             <dt>Customer reviewed</dt><dd>${rev}</dd>
           </dl>
@@ -458,7 +458,7 @@ function openModalPopup(node) {
       const items = (sec.documents || []).length
         ? sec.documents.map((d) => `
         <li>
-          <button class="popup-doc-title-link popup-doc-open-btn" type="button" data-href="${escapeHtml(d.filePath)}" data-title="${escapeHtml(d.fileName)}">${escapeHtml(d.fileName)}</button>
+          <a class="popup-doc-title-link" href="${escapeHtml(d.filePath)}" target="_blank" rel="noopener noreferrer">${escapeHtml(d.fileName)}</a>
           <div class="popup-doc-meta">Document type: ${escapeHtml(inferDocumentType(d.filePath))}</div>
           <div class="popup-doc-meta">Customer reviewed: ${d.customerReviewed ? 'Yes' : 'No'}</div>
         </li>`).join('')
@@ -472,7 +472,7 @@ function openModalPopup(node) {
   } else if (isLeaf && docs.length) {
     docLinks = `<ul class="popup-doc-list">${docs.map((d) => `
         <li>
-          <button class="popup-doc-title-link popup-doc-open-btn" type="button" data-href="${escapeHtml(d.filePath)}" data-title="${escapeHtml(d.fileName)}">${escapeHtml(d.fileName)}</button>
+          <a class="popup-doc-title-link" href="${escapeHtml(d.filePath)}" target="_blank" rel="noopener noreferrer">${escapeHtml(d.fileName)}</a>
           <div class="popup-doc-meta">Document type: ${escapeHtml(inferDocumentType(d.filePath))}</div>
           <div class="popup-doc-meta">Customer reviewed: ${d.customerReviewed ? 'Yes' : 'No'}</div>
         </li>`).join('')}</ul>`;
@@ -503,38 +503,6 @@ function closeModalPopup() {
 }
 popupEls.backdrop.addEventListener('click', (e) => {
   if (e.target === popupEls.backdrop) closeModalPopup();
-});
-
-/* ============================================================================
-   Document viewer overlay (inline iframe via Office Online Viewer)
-   ============================================================================ */
-const docViewerEl = document.getElementById('doc-viewer-overlay');
-
-function openDocViewer(href, title) {
-  const isOfficeOrSharePoint = /\.(pptx?|docx?|xlsx?)(\?|$)/i.test(href) || href.includes('sharepoint.com');
-  const embedUrl = isOfficeOrSharePoint
-    ? `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(href)}`
-    : href;
-  docViewerEl.querySelector('.dv-title').textContent = title;
-  docViewerEl.querySelector('.dv-iframe').src = embedUrl;
-  docViewerEl.classList.remove('hidden');
-  docViewerEl.querySelector('.dv-close').focus();
-}
-
-function closeDocViewer() {
-  docViewerEl.classList.add('hidden');
-  docViewerEl.querySelector('.dv-iframe').src = '';
-}
-
-docViewerEl.querySelector('.dv-close').addEventListener('click', closeDocViewer);
-
-// Event delegation: catch doc open button clicks anywhere in the page
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('.rp-doc-open-btn, .popup-doc-open-btn');
-  if (btn) {
-    e.preventDefault();
-    openDocViewer(btn.dataset.href, btn.dataset.title);
-  }
 });
 
 /* ============================================================================
@@ -1373,7 +1341,7 @@ async function bootstrap() {
   });
   // Global keys
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeDocViewer(); detailPanel.close(); closeModalPopup(); }
+    if (e.key === 'Escape') { detailPanel.close(); closeModalPopup(); }
     if (e.key === '[' && (e.ctrlKey || e.metaKey)) {
       e.preventDefault();
       document.getElementById('left-panel-toggle').click();
