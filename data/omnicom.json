@@ -12,7 +12,7 @@
           "title": "Account Team",
           "description": "Account stakeholders, decision-makers, and RACI matrix.",
           "status": "complete",
-          "url": "https://adobe.sharepoint.com/:b:/r/sites/Omnicom464/Shared%20Documents/General/Adobe%20Account%20Team/Omnicom%20Team%20Slide.pdf?csf=1&web=1&e=hBYHHn"
+          "url": "https://adobe.sharepoint.com/:p:/r/sites/Omnicom464/Shared%20Documents/General/03%20-%20Customer%20Success%20(SBR,%20QBR,%20MAP,%20CLI)/MAPs,%20SDPs,%20NBAPs/2026/5_2026(MAY)/Omnicom_Mutual%20Action%20Plan%20(MAP)_MAY26_DME%20+%20DX%20-%20Copy.pptx?d=w9bfe9c6f4db3479a94a8e3f90323bc97&csf=1&web=1&e=yqVqwU&nav=eyJzSWQiOjIxNDc0ODM1NTcsImNJZCI6MzMwMzAwMTk3OX0"
         },
         {
           "title": "Account Plans",
@@ -30,6 +30,12 @@
               "customerReviewed": false
             }
           ]
+        },
+        {
+          "title": "AAUI - Account Information",
+          "description": "Account stakeholders, decision-makers, and RACI matrix.",
+          "status": "complete",
+          "url": "https://adobe.sharepoint.com/:b:/r/sites/Omnicom464/Shared%20Documents/General/Adobe%20Account%20Team/Omnicom%20Team%20Slide.pdf?csf=1&web=1&e=hBYHHn"
         },
         {
           "title": "RTB",
@@ -139,7 +145,7 @@
           "documents": []
         },
         {
-          "title": "IPG",
+          "title": "IPG Health",
           "description": "IPG Global Admin Console IMS documentation.",
           "status": "in-progress",
           "documents": [
@@ -280,7 +286,7 @@
       "title": "POCs",
       "description": "Proof of Concepts — experimental work, prototypes, and feasibility studies.",
       "side": "left",
-      "status": "in-progress",
+      "status": "complete",
       "documents": [
         {
           "fileName": "Omnicom ACPC API POC",
@@ -297,7 +303,7 @@
     {
       "title": "Northstar Technical Assesment (NSTA)",
       "description": "NorthStar Technical Assessments per fiscal year.",
-      "status": "in-progress",
+      "status": "complete",
       "documents": [
         {
           "fileName": "NSTA 2025",
@@ -403,7 +409,7 @@
           "description": "Adobe CSC reference architecture blueprints.",
           "nodeType": "architecture",
           "nodeIcon": "./assets/image.png",
-          "status": "in-progress",
+          "status": "complete",
           "architectureSections": [
             {
               "sectionTitle": "Technology Architecture",
@@ -442,8 +448,8 @@
           ]
         },
         {
-          "title": "Other Blueprints",
-          "description": "Additional architecture reference blueprints.",
+          "title": "Agency CSC Blueprint",
+          "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
           "nodeType": "architecture",
           "nodeIcon": "./assets/image.png",
           "status": "not-started",
@@ -452,51 +458,6 @@
             { "sectionTitle": "Application Architecture", "documents": [] },
             { "sectionTitle": "Data Architecture", "documents": [] },
             { "sectionTitle": "Business Architecture", "documents": [] }
-          ]
-        },
-        {
-          "title": "Agency Blueprints",
-          "description": "Architecture blueprints for agency access and integration patterns.",
-          "children": [
-            {
-              "title": "Identity First CSC",
-              "description": "Agencies are provisioned access to brand instances to produce deliverables. This requires proper access governance, ensuring that only the necessary access needed for agency work is granted.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            },
-            {
-              "title": "Integrations First CSC",
-              "description": "Agencies own their credits, operate within their own instances, integrate with brand instances and share deliverables with brands. This requires seamless integration between multiple CSCs.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            },
-            {
-              "title": "Solution Integrators CSC",
-              "description": "Agencies integrate Adobe solutions into their own custom business applications, and provide services and support to brands for these custom applications.",
-              "nodeType": "architecture",
-              "nodeIcon": "./assets/image.png",
-              "status": "not-started",
-              "architectureSections": [
-                { "sectionTitle": "Technology Architecture", "documents": [] },
-                { "sectionTitle": "Application Architecture", "documents": [] },
-                { "sectionTitle": "Data Architecture", "documents": [] },
-                { "sectionTitle": "Business Architecture", "documents": [] }
-              ]
-            }
           ]
         }
       ]
