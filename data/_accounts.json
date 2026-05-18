@@ -14,11 +14,6 @@
       "id": "wpp",
       "title": "WPP",
       "file": "wpp.json"
-    },
-    {
-      "id": "Publicis",
-      "title": "Publicis",
-      "file": "publicis.json"
     }
   ],
   "default": "omnicom"
